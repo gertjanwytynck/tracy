@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     // CONSTANT VARS
-    const imageCount = 5;
+    const imageCount = 6;
     const path = "img/slider/";
 
     // RUN
