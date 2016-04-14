@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
     // CONSTANT VARS
     const imageCount = 6;
     const path = "img/slider/";
@@ -17,9 +17,9 @@ var createArrayImages = function(path, imageCount) {
 }
 
 var generateRandomNumber = function(imageCount) {
-  return Math.ceil(Math.random() * imageCount);
+  return Math.floor(Math.random() * imageCount);
 }
 
 var run = function(images, random) {
-   $("body").css("background-image", "url(" + images[random - 1] + ")");
+   $("body").css("background-image", "url(" + images[random] + ")");
 }
