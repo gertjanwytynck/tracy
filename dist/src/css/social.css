@@ -1,0 +1,42 @@
+div#tracy-container {
+  width: 400px;
+  display: inline-block;
+  float: left;
+}
+
+div#social-container {
+  display: inline-block;
+  float: right;
+  height: 47px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+div#social-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+div#social-container ul li {
+  float: left;
+}
+
+div#social-container ul li.red-border {
+  background: rgba(200, 75, 55, 1);
+  width: 8px;
+  height: 47px;
+}
+
+div#social-container ul li.social-icon:hover {
+  border-bottom: 2px solid white;
+}
+
+div#social-container ul li a {
+  display: block;
+  width: 47px;
+  height: 47px;
+}
+
+div#social-container ul li a svg {
+  margin: 15px;
+}
