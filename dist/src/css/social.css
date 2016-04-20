@@ -6,6 +6,9 @@ div#tracy-container {
 
 div#social-container {
   display: inline-block;
+  position: absolute;
+  right: 7px;
+  top: 7px;
   float: right;
   height: 47px;
   background: rgba(0, 0, 0, 0.3);

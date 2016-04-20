@@ -1,0 +1,12 @@
+div#video-container .wistia_responsive_padding {
+  padding: 56.25% 0 0 0;
+  position:relative;
+}
+
+div#video-container .wistia_responsive_wrapper {
+  position: absolute;
+  top: 0;
+  left: 478px;
+  right: 204px;
+  width: auto;
+}
