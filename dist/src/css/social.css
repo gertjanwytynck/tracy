@@ -43,3 +43,34 @@ div#social-container ul li a {
 div#social-container ul li a svg {
   margin: 15px;
 }
+
+@media only screen and (max-device-width: 480px) {
+  div#tracy-container {
+    width: 95vw;
+    display: block;
+  }
+
+  div#social-container {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 95vw;
+    margin-bottom: 5px;
+  }
+
+  div#social-container ul {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 188px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div#social-container ul li.red-border {
+    display: none;
+  }
+}
