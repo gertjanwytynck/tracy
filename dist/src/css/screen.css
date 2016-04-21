@@ -44,6 +44,20 @@ div#social-container ul li a svg {
   margin: 15px;
 }
 
+div#video-container .wistia_responsive_padding {
+  padding: 56.25% 0 0 0;
+  position:relative;
+  margin-left: 478px;
+}
+
+div#video-container .wistia_responsive_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 204px;
+  width: auto;
+}
+
 @media only screen and (max-device-width: 480px) {
   div#tracy-container {
     width: 95vw;
@@ -71,6 +85,10 @@ div#social-container ul li a svg {
   }
 
   div#social-container ul li.red-border {
+    display: none;
+  }
+
+  div#video-container {
     display: none;
   }
 }
