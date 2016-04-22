@@ -38,9 +38,7 @@ div#social-container div.arrow_box:after {
 }
 div#social-container {
   display: inline-block;
-  position: absolute;
-  right: 7px;
-  top: 7px;
+  float: right;
   height: 47px;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -70,44 +68,124 @@ div#social-container ul li a {
 div#social-container ul li a svg {
   margin: 15px;
 }
+
+div#video-container {
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  width: 50vw;
+  background: white;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+div#video-container h4 {
+  background: #c84b37;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+div#video-container h4 .close-modal {
+  margin-right: 0;
+  border-radius: 50%;
+}
+
+div#video-container h4 .close-modal a svg:hover {
+  transform: rotate(360deg);
+}
+
+div#video-container h4 .close-modal a svg:hover {
+  margin-right: 0;
+  -webkit-ransform-origin: center center;
+  transform: rotate(360deg);
+}
+
+div#video-container .content-modal {
+  padding: 20px;
+  color: black;
+  font-size: 1.2em;
+  clear: both;
+}
+
+div#video-container:hover {
+  cursor: move;
+}
+
+div#video-container .close-modal {
+  float: right;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  padding: 0 0 0 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 div#video-container .wistia_responsive_padding {
   padding: 56.25% 0 0 0;
-  margin-left: 478px;
+  position: relative;
 }
 div#video-container .wistia_responsive_wrapper {
   position: absolute;
-  top: 7px;
-  right: 7px;
-  width: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-device-width: 480px) {
+  html {
+    position: relative;
+    min-height: 100vh;
+  }
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
   div#tracy-container {
-    width: 95vw;
+    width: calc(100vw - 20px);
+    margin: 10px;
     display: block;
   }
   div#social-container {
     display: block;
-    position: relative;
-    top: 0;
+    position: absolute;
+    bottom: 0;
     right: 0;
-    width: 95vw;
-    margin-bottom: 5px;
+    width: calc(100vw - 20px);
+    margin: 10px;
   }
   div#social-container ul {
     display: block;
     position: relative;
-    top: 0;
-    right: 0;
-    width: 235px;
-    margin-bottom: 5px;
+    width: 270px;
     margin-left: auto;
     margin-right: auto;
   }
   div#social-container ul li.red-border {
     display: none;
   }
+
   div#video-container {
+    width: calc(100vw - 20px);
+    margin: 10px;
+    background: white;
+  }
+
+  div#social-container div.arrow_box {
+    display: none;
+  }
+
+  div#social-container ul li {
+    float: left;
+  }
+
+  div#social-container ul li:first-child {
     display: none;
   }
 }
