@@ -1,9 +1,12 @@
 $(document).ready(function() {
-  $("#video-container").draggable();
+  var el = $(".modal");
+  el.draggable();
+  el.resizable({
+    aspectRatio: el.width() / el.height()
+  });
 
   $("a[name=modal]").click(function(e) {
     e.preventDefault();
-    var el = $(".modal");
     var tracy = $("#tracy-container");
     var html = $("html");
     var height = $(window).height();

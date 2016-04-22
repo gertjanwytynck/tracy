@@ -14,7 +14,6 @@ div#social-container div.arrow_box {
   margin-right: 20px;
   display: inline-block;
   float: left;
-  border-radius: 3px;
 }
 div#social-container div.arrow_box p {
   color: white;
@@ -83,22 +82,19 @@ div#video-container {
 div#video-container h4 {
   background: #c84b37;
   color: white;
-  padding: 20px;
+  padding: 15px 20px;
   margin: 0;
+  height: 17px;
 }
 
 div#video-container h4 .close-modal {
-  margin-right: 0;
+  margin: 0;
+  padding: 0;
   border-radius: 50%;
+  transition: transform 0.4s ease-in-out;
 }
 
-div#video-container h4 .close-modal a svg:hover {
-  transform: rotate(360deg);
-}
-
-div#video-container h4 .close-modal a svg:hover {
-  margin-right: 0;
-  -webkit-ransform-origin: center center;
+div#video-container h4 .close-modal:hover {
   transform: rotate(360deg);
 }
 
@@ -137,7 +133,41 @@ div#video-container .wistia_responsive_wrapper {
   height: 100%;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 1024px) {
+  div#social-container div.arrow_box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  div#social-container {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100vw - 20px);
+    margin: 10px;
+  }
+  div#social-container ul {
+    display: block;
+    position: relative;
+    width: 240px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div#social-container ul li.red-border {
+    display: none;
+  }
+  div.habla_panel_border.hbl_pal_main_bg.hbl_pal_panel_border.hbl_pal_main_font_family.hbl_pal_main_font_size  {
+    display: none !important;
+  }
+  div#social-container ul li:first-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   html {
     position: relative;
     min-height: 100vh;
@@ -152,24 +182,6 @@ div#video-container .wistia_responsive_wrapper {
     margin: 10px;
     display: block;
   }
-  div#social-container {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: calc(100vw - 20px);
-    margin: 10px;
-  }
-  div#social-container ul {
-    display: block;
-    position: relative;
-    width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  div#social-container ul li.red-border {
-    display: none;
-  }
 
   div#video-container {
     width: calc(100vw - 20px);
@@ -183,9 +195,5 @@ div#video-container .wistia_responsive_wrapper {
 
   div#social-container ul li {
     float: left;
-  }
-
-  div#social-container ul li:first-child {
-    display: none;
   }
 }
