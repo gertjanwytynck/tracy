@@ -177,10 +177,12 @@ div#video-container .wistia_responsive_wrapper {
   }
 }
 
-input#tracy-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
 }
 
 @media only screen and (max-width: 480px) {
