@@ -1,7 +1,3 @@
-html {
-  font-family: 'Roboto', sans-serif;
-}
-
 div#tracy-container {
   width: 400px;
   display: inline-block;
@@ -91,7 +87,15 @@ div#video-container h4 .close-modal {
   margin: 0;
   padding: 0;
   border-radius: 50%;
+  width: 17px;
+  height: 17px;
   transition: transform 0.4s ease-in-out;
+}
+
+div#video-container h4 .close-modal svg {
+  margin: 2.5px;
+  width: 12px;
+  height: 12px;
 }
 
 div#video-container h4 .close-modal:hover {
@@ -168,6 +172,12 @@ div#video-container .wistia_responsive_wrapper {
   div#video-container {
     display: none !important;
   }
+}
+
+input#tracy-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media only screen and (max-width: 480px) {
