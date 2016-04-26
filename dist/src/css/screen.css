@@ -9,15 +9,15 @@ div#tracy-container {
 div#social-container div.arrow_box {
   position: relative;
   background: #c84b37;
-  height: 47px;
+  height: 45px;
   margin-right: 20px;
   display: inline-block;
   float: left;
 }
 div#social-container div.arrow_box p {
   color: white;
-  line-height: 47px;
-  height: 47px;
+  line-height: 45px;
+  height: 45px;
   margin: 0 20px;
 }
 div#social-container div.arrow_box:after {
@@ -37,7 +37,7 @@ div#social-container div.arrow_box:after {
 div#social-container {
   display: inline-block;
   float: right;
-  height: 47px;
+  height: 45px;
   background: rgba(0, 0, 0, 0.3);
 }
 div#social-container ul {
@@ -53,15 +53,15 @@ div#social-container ul li {
 div#social-container ul li.red-border {
   background: rgba(200, 75, 55, 1);
   width: 8px;
-  height: 47px;
+  height: 45px;
 }
 div#social-container ul li.social-icon:hover {
   border-bottom: 2px solid white;
 }
 div#social-container ul li a {
   display: block;
-  width: 47px;
-  height: 47px;
+  width: 45px;
+  height: 45px;
 }
 div#social-container ul li a svg {
   margin: 15px;
@@ -140,6 +140,20 @@ div#video-container .wistia_responsive_wrapper {
   height: 100%;
 }
 
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+     margin: 0;
+     padding: 0;
+}
+
+div#tracy-container form.tracy-form input.tracy-submit, div#tracy-container div.tracy-language-box {
+  height: 45px;
+}
+
 @media only screen and (max-width: 1024px) {
   div#social-container div.arrow_box {
     display: none;
@@ -175,16 +189,6 @@ div#video-container .wistia_responsive_wrapper {
   div#video-container {
     display: none !important;
   }
-}
-
-textarea,
-input[type="text"],
-input[type="button"],
-input[type="submit"] {
-     -webkit-appearance: none;
-     border-radius: 0;
-     margin: 0;
-     padding: 0;
 }
 
 @media only screen and (max-width: 480px) {
