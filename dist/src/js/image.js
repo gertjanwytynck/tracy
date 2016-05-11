@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // CONSTANT VARS
-    const imageCount = 6;
-    const path = "img/slider/";
+    const imageCount = 5;
+    const path = "img/random/";
 
     // RUN
     run(createArrayImages(path, imageCount), generateRandomNumber(imageCount));

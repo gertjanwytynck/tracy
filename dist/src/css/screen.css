@@ -1,0 +1,223 @@
+body {
+  font-family: "proxima-nova", sans-serif;
+}
+div#tracy-container {
+  width: 400px;
+  display: inline-block;
+  float: left;
+}
+div#social-container div.arrow_box {
+  position: relative;
+  background: #c84b37;
+  height: 45px;
+  margin-right: 20px;
+  display: inline-block;
+  float: left;
+}
+div#social-container div.arrow_box p {
+  color: white;
+  line-height: 45px;
+  height: 45px;
+  margin: 0 20px;
+}
+div#social-container div.arrow_box:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(200, 75, 55, 0);
+  border-left-color: #c84b37;
+  border-width: 10px;
+  margin-top: -10px;
+}
+div#social-container {
+  display: inline-block;
+  float: right;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.3);
+}
+div#social-container ul {
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+div#social-container ul li {
+  float: left;
+}
+div#social-container ul li.red-border {
+  background: rgba(200, 75, 55, 1);
+  width: 8px;
+  height: 45px;
+}
+div#social-container ul li.social-icon:hover {
+  border-bottom: 2px solid white;
+}
+div#social-container ul li a {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+div#social-container ul li a svg {
+  margin: 15px;
+}
+
+div#video-container {
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  width: 50vw;
+  background: white;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+div#video-container h4 {
+  background: #c84b37;
+  color: white;
+  padding: 15px 20px;
+  margin: 0;
+  height: 17px;
+}
+
+div#video-container h4 .close-modal {
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  transition: transform 0.4s ease-in-out;
+}
+
+div#video-container h4 .close-modal svg {
+  margin: 2.5px;
+  width: 12px;
+  height: 12px;
+}
+
+div#video-container h4 .close-modal:hover {
+  transform: rotate(360deg);
+}
+
+div#video-container .content-modal {
+  padding: 20px;
+  color: black;
+  font-size: 1.2em;
+  clear: both;
+}
+
+div#video-container:hover {
+  cursor: move;
+}
+
+div#video-container .close-modal {
+  float: right;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  padding: 0 0 0 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div#video-container .wistia_responsive_padding {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+div#video-container .wistia_responsive_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+     margin: 0;
+     padding: 0;
+}
+
+div#tracy-container form.tracy-form input.tracy-submit, div#tracy-container div.tracy-language-box {
+  height: 45px;
+}
+
+@media only screen and (max-width: 1024px) {
+  div#social-container div.arrow_box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  div#social-container {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100vw - 20px);
+    margin: 10px;
+  }
+  div#social-container ul {
+    display: block;
+    position: relative;
+    width: 240px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div#social-container ul li.red-border {
+    display: none;
+  }
+  div.habla_panel_border.hbl_pal_main_bg.hbl_pal_panel_border.hbl_pal_main_font_family.hbl_pal_main_font_size  {
+    display: none !important;
+  }
+  div#social-container ul li:first-child {
+    display: none;
+  }
+  div#video-container {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    position: relative;
+    min-height: 100vh;
+  }
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  div#tracy-container {
+    width: calc(100vw - 20px);
+    margin: 10px;
+    display: block;
+  }
+
+  div#video-container {
+    width: calc(100vw - 20px);
+    margin: 10px;
+    background: white;
+  }
+
+  div#social-container div.arrow_box {
+    display: none;
+  }
+
+  div#social-container ul li {
+    float: left;
+  }
+}
