@@ -191,6 +191,12 @@ div#tracy-container form.tracy-form input.tracy-submit, div#tracy-container div.
   }
 }
 
+@media only screen and (max-width: 400px) {
+  div#social-container {
+    display:none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   html {
     position: relative;
