@@ -45,4 +45,4 @@ Add the html component in your preferred file.
 
 ## Copyright and license
 
-Code and documentation copyright 2015 Bubble Post.
+Code and documentation copyright 2016 Bubble Post.
